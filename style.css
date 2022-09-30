@@ -1,0 +1,211 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+
+
+body, ul, li, p {
+    margin: 0px;
+    /* padding: 0px; */
+    list-style: none;
+    font-size: 1.5rem;
+    /* font-family: 'Newsreader',Arial, Helvetica, sans-serif; */
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    background-color: #FAF9F6;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    /* mudar o "justify-content" quando colocar a logo */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* nav {
+    position: fixed;
+} */
+
+.menu {
+    display:flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    padding: 10px;
+}
+
+.nav_logo {
+    width: 100px;
+}
+
+.showcase {
+    height: 800px;
+    max-width: 100%;
+    background-image: url(./imagens/abajur.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position-y: 80%;
+}
+
+.showcaseText {
+    max-width: 500px;
+    float: left;
+    padding-top: 350px;
+    padding-left: 100px;
+}
+
+.perfil {
+    -webkit-animation: perfil 1.2s both;
+    -moz-animation: perfil 1.2s both;
+    -o-animation: perfil 1.2s both;
+    animation: perfil 1.2s both;
+    }
+    
+    @keyframes perfil {
+    0% {
+      opacity: 0;
+      transform: translateX(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    }
+
+.bio {
+-webkit-animation: bio 1.2s both;
+-moz-animation: bio 1.2s both;
+-o-animation: bio 1.2s both;
+animation: bio 1.2s both;
+}
+
+@keyframes bio {
+0% {
+  opacity: 0;
+  transform: translateX(80px);
+}
+100% {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+.features {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    max-width: 600px;
+    border-radius: 80%;
+}
+
+.bio {
+    max-width: 700px;
+}
+
+.bio h1 {
+    font-size: 80px;
+    font-weight: 300;
+    /* font-style: italic; */
+    margin: 0px;
+    padding: 0px;
+    color: #E0C9C3;
+    /* letter-spacing: -3px; */
+    line-height: 75px;
+}
+
+.bio p {
+    padding-top: 20px;
+}
+
+.conteudo {
+    background-color: #F2EDEB;
+}
+
+.info {
+    padding: 10px;
+}
+
+.infoTitle {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.infoBox {
+    background: #FAF9F6;
+    padding: 10px;
+    /* margin: 5px; */
+    border-radius: 5px;
+}
+/* Caixas das Informações importantes */
+.featureContainer {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2%;
+
+    /* display:flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    
+
+}
+
+.psicoterapia {
+    background-color: #FAF9F6;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer div {
+    width: 500px;
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 600;
+}

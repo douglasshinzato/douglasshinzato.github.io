@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/847b5db40c.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <a href="/">
+                <!-- <img class="nav_logo" src="./imagens/Xapa.png" alt="Logo Xapa" /> -->
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li>
+                        <a href="#inform">Informações Importantes</a>
+                    </li>
+                    <li>
+                        <a href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="features">
+            <!-- tag <h> tem margin de fábrica -->
+            <img class="perfil" src="./imagens/Nat.jpg" alt="foto">
+            <div class="bio">
+                <h1>Natália</h1>
+                <h1>Almeida</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat laborum eligendi animi minima
+                    aliquam facere, exercitationem ducimus vero dicta soluta sint recusandae totam doloremque, autem non
+                    minus, quas mollitia sunt.</p>
+            </div>
+        </section>
+
+        <section class="showcase">
+            <div class="showcaseText">
+                <a name="sobre"></a>
+                <h1>Sobre Mim</h1>
+                <p>Meu nome é Natália e moro em Campo Grande, Mato Grosso do Sul. Me formei em psicologia no ano de 2021
+                    na Universidade Federal de Mato Grosso do Sul.</p>
+            </div>
+        </section>
+        <!-- aqui que ta o bug/o bug era o height da "info" -->
+        <div class="conteudo">
+            <section class="info">
+                <a name="inform"></a>
+                <!-- tag <h> tem margin de fábrica -->
+                <h1 class="infoTitle">Informações Importantes</h1>
+                <div class="featureContainer">
+                    <div class="infoBox">
+                        <h2>Sobre as Sessões</h2>
+                        <p>As sessões possuem duração de 50 minutos, sendo realizadas, geralmente, uma vez por semana.
+                        </p>
+                    </div>
+                    <div class="infoBox">
+                        <h2>Sigilo</h2>
+                        <p>As sessões são confidenciais por lei, nenhuma informação do que for discutido será divulgado.
+                            Você será livre para falar sem julgamento.</p>
+                    </div>
+                    <div class="infoBox">
+                        <h2>Valor</h2>
+                        <p>O valor é cobrado por sessão, podendo ser pago a cada sessão ou mensalmente.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="psicoterapia">
+                <h1 class="infoTitle">Psicoterapia Online</h1>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci fugiat optio nulla recusandae laudantium dicta, aspernatur commodi accusamus beatae dolorum expedita illo ratione corrupti, saepe incidunt nihil! Quos, similique tempora.</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>
+                    <a name="contatos"></a>
+                    <h3>Endereço:</h3>
+                    <div>
+                        <p>Avenida Afonso Pena, 7900</p>
+                        <p>Bairro Santa Fé</p>
+                        <p>Campo Grande, MS</p>
+                        <p>CEP: 79040-700</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Contatos:</h3>
+                    <div class="icones">
+                        <a href="https://www.instagram.com/natalialmeida.psi/"><i class="fa-brands fa-instagram"></i>
+                            @natalialmeida.psi</a>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=5567998665545&text&type=phone_number&app_absent=0"><i
+                                class="fa-brands fa-whatsapp"></i> (67)99866-5545</a>
+                        <a href="/"><i class="fa-regular fa-envelope fa-sm"></i> psinatalialmeida@gmail.com</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+</body>
+
+</html>
