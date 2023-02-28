@@ -20,6 +20,7 @@ body {
 
 header {
   box-shadow: 0px 3px 13px #000000;
+  animation: topdown 500ms 200ms backwards;
 }
 
 .nav-bar {
@@ -41,6 +42,11 @@ header {
 
 .nav-item {
   margin: 0 15px;
+  transition: all 200ms;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
 }
 
 .nav-link {
@@ -65,6 +71,7 @@ header {
 .page {
   padding: 15rem 5rem 5rem;
   counter-reset: my-counter;
+  animation: downtop 700ms 500ms backwards;
 }
 
 #hero {
@@ -81,7 +88,6 @@ header {
 #hero p:nth-child(1) {
   margin-bottom: 8px;
   color: #82feee;
-  animation: downtop 700ms 400ms backwards;
 }
 
 #hero h1 {
@@ -91,7 +97,6 @@ header {
   line-height: 4.8rem;
   color: #ffffff;
   margin-bottom: 8px;
-  animation: downtop 700ms 500ms backwards;
 }
 
 #hero h2 {
@@ -101,12 +106,10 @@ header {
   line-height: 4.4rem;
   color: #44475a;
   margin-bottom: 2.7rem;
-  animation: downtop 700ms 700ms backwards;
 }
 
 #hero p:nth-child(4) {
   max-width: 56rem;
-  animation: downtop 700ms 1s backwards;
 }
 
 #hero p:nth-child(5) {
@@ -360,5 +363,28 @@ footer span {
 
   #techs img {
     max-width: 6rem;
+  }
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translatey(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatey(0);
   }
 }
