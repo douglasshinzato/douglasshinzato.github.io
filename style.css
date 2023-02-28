@@ -109,10 +109,15 @@ header {
   animation: downtop 700ms 1s backwards;
 }
 
+#hero p:nth-child(5) {
+  max-width: 56rem;
+  margin-top: 1rem;
+}
+
 #about-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 6rem;
   text-align: center;
 }
@@ -120,14 +125,13 @@ header {
 #about-text {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  max-width: 58rem;
+  max-width: 50rem;
   gap: 1.8rem;
   font-size: 1.6rem;
 }
 
 #profile {
-  max-width: 25rem;
+  max-width: 30rem;
 }
 
 .heading::before {
@@ -191,7 +195,7 @@ header {
 }
 
 .card {
-  max-width: 50rem;
+  max-width: 40rem;
 }
 
 .card img {
@@ -203,15 +207,14 @@ header {
 }
 
 #techs {
-  display: grid;
+  display: flex;
   align-items: center;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   gap: 3rem;
 }
 
 #techs img {
-  max-width: 6rem;
+  max-width: 8rem;
 }
 
 #contact-text {
@@ -275,19 +278,19 @@ footer {
 }
 
 #social-links img {
-    max-width: 2.8rem;
+  max-width: 2.8rem;
 }
 
 footer p {
-    font-family: 'Roboto Mono';
-    font-size: 1.2rem;
+  font-family: "Roboto Mono";
+  font-size: 1.2rem;
 }
 
 footer span {
-    color: #82feee;
+  color: #82feee;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 760px) {
   .nav-bar {
     padding: 1.5rem 4rem;
   }
@@ -324,5 +327,38 @@ footer span {
   }
   .open {
     display: block;
+  }
+
+  #about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    text-align: center;
+  }
+
+  #about-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 58rem;
+    gap: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  #profile {
+    max-width: 25rem;
+  }
+
+  #techs {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  #techs img {
+    max-width: 6rem;
   }
 }
