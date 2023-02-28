@@ -87,7 +87,7 @@ header {
 #hero h1 {
   font-family: "Inter";
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3.6rem;
   line-height: 4.8rem;
   color: #ffffff;
   margin-bottom: 8px;
@@ -97,7 +97,7 @@ header {
 #hero h2 {
   font-family: "Inter";
   font-weight: 800;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 4.4rem;
   color: #44475a;
   margin-bottom: 2.7rem;
@@ -127,7 +127,7 @@ header {
 }
 
 #profile {
-  max-width: 40rem;
+  max-width: 25rem;
 }
 
 .heading::before {
@@ -150,7 +150,7 @@ header {
   font-family: "Inter";
   color: #ffffff;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 3.2rem;
 }
 
@@ -166,7 +166,8 @@ header {
 #project-list {
   display: grid;
   gap: 1.2rem;
-  grid-template-areas: "A F" "B F" "E C" "D D";
+  grid-template-areas: "D F" "B F" "E C" "A A";
+  /* grid-template-areas: "A A" "D F" "B F" "E C" ; */
   justify-content: center;
 }
 
@@ -207,6 +208,10 @@ header {
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+}
+
+#techs img {
+  max-width: 6rem;
 }
 
 #contact-text {
@@ -275,7 +280,7 @@ footer {
 
 footer p {
     font-family: 'Roboto Mono';
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 footer span {
