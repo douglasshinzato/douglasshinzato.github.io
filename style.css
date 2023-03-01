@@ -250,21 +250,28 @@ header {
   text-align: center;
 }
 
+#contact-text a {
+  margin-top: 10rem;
+  text-decoration: none;
+}
+
 #contact-button {
-  max-width: 30rem;
   padding: 2rem 4rem;
   border: 2px solid #82feee;
   border-radius: 8px;
   background-color: transparent;
-  margin-top: 10rem;
-}
-
-#contact-button a {
-  text-decoration: none;
+  transition: all 200ms;
   color: #ffffff;
   font-family: "Inter";
   font-size: 2.4rem;
   line-height: 2.9rem;
+}
+
+#contact-button:hover {
+  transform: scale(1.1);
+  background-color: #82feee;
+  color: #191622;
+  cursor: pointer;
 }
 
 footer {
@@ -322,7 +329,7 @@ footer span {
     text-align: center;
     padding-bottom: 1rem;
   }
-  
+
   .mobile-menu .nav-item {
     display: block;
     padding-top: 1.2rem;
