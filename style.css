@@ -203,6 +203,11 @@ header {
 
 .card {
   max-width: 40rem;
+  transition: all 200ms;
+}
+
+.card:hover {
+  opacity: 0.8;
 }
 
 .card img {
