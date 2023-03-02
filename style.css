@@ -215,7 +215,6 @@ header {
   border-radius: 6px;
   object-fit: cover;
   border-radius: 6px;
-  filter: brightness(0.8);
 }
 
 #techs {
