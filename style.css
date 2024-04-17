@@ -29,12 +29,7 @@ header {
   padding: 2rem 6rem;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list ul {
+.nav-bar ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -60,7 +55,7 @@ header {
   color: #82feee;
 }
 
-.mobile-menu-icon {
+.mobileMenuButton {
   display: none;
 }
 
@@ -68,7 +63,7 @@ header {
   display: none;
 }
 
-.page {
+main {
   padding: 15rem 5rem 5rem;
 }
 
@@ -316,30 +311,56 @@ footer span {
     display: none;
   }
 
-  .mobile-menu-icon {
+  .mobileMenuButton {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .mobileMenuButton .bar,
+  .mobileMenuButton:after,
+  .mobileMenuButton:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .mobileMenuButton.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  .mobileMenuButton.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  .mobileMenuButton.is-active .bar {
+    opacity: 0;
+  }
+
+  .mobile-menu.is-active {
+    width: 100%;
+    background-color: #191622;
     display: block;
   }
 
-  .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
   .mobile-menu ul {
-    display: flex;
+    display: block;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
   }
 
   .mobile-menu .nav-item {
     display: block;
     padding-top: 1.2rem;
-  }
-
-  .open {
-    display: block;
   }
 
   #about-content {
