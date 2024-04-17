@@ -172,28 +172,20 @@ main {
 #project-list {
   display: grid;
   gap: 1.2rem;
-  grid-template-areas: "D F" "B F" "E C" "A A";
-  /* grid-template-areas: "A A" "D F" "B F" "E C" ; */
+  grid-template-areas:
+    "first third"
+    "second third";
   justify-content: center;
 }
 
 #project-list div:nth-child(1) {
-  grid-area: A;
+  grid-area: first;
 }
 #project-list div:nth-child(2) {
-  grid-area: B;
+  grid-area: second;
 }
 #project-list div:nth-child(3) {
-  grid-area: C;
-}
-#project-list div:nth-child(4) {
-  grid-area: D;
-}
-#project-list div:nth-child(5) {
-  grid-area: E;
-}
-#project-list div:nth-child(6) {
-  grid-area: F;
+  grid-area: third;
 }
 
 .card {
@@ -220,7 +212,7 @@ main {
 }
 
 #techs img {
-  max-width: 8rem;
+  max-height: 8rem;
 }
 
 #contact-text {
