@@ -391,7 +391,7 @@ footer span {
   }
 }
 
-/* @keyframes topdown {
+@keyframes topdown {
   0% {
     opacity: 0;
     transform: translatey(-15px);
@@ -401,4 +401,4 @@ footer span {
     opacity: 1;
     transform: translatey(0);
   }
-} */
+}
